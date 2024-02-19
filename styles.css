@@ -88,27 +88,31 @@ body {
 div.principal{
     margin-bottom: 30%;
     padding-top: 10%;
+    
 }
 
 h1.titulo{
     font-family: Helvetica, Arial, sans-serif;
     font-size: 8vw ; 
     margin: 0 0 0 5%;
+
 }
 .subtitle {
     margin: 0 0 0 6vw; /* Margen izquierdo y derecho del 10% del ancho de la ventana */
     font-family: Helvetica, Arial, sans-serif;
     font-size: calc(0.5vw + 1vh); /* Utilizando una combinación de vw y vh */
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .rainbow-text {
-    z-index: 1;
-    color: transparent; /* Hace que el texto sea transparente */
+    
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra de texto */
     background-image: linear-gradient(to right, #09C686, #00CFB1,#F6E40F, #9CCD00,#82b21e,#09C686); /* Fondo degradado arcoíris */
     background-clip: text; /* Clip de texto para aplicar el degradado */
-    -webkit-text-fill-color: transparent; /* Color de texto transparente */
+    color: transparent; /* Color de texto transparente */
     background-size: 200% auto; /* Tamaño del fondo para permitir el desplazamiento */
     animation: rainbow-animation 10s linear infinite forwards; /* Animación de arcoíris */
+    
 }
   
 @keyframes rainbow-animation {
@@ -171,8 +175,9 @@ a {
 }
   
 .contenedor {
-    padding: 10% 3% 0% 3%;
+    margin: 10% 3% 0% 3%;
     display: flex;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5); /* Sombra del borde */
 }
 
 .izquierda,
@@ -185,7 +190,8 @@ a {
 }
 
 .izquierda {
-    
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 0% 2%;
     align-items: center;
     background-color: #09C686; /* Color de fondo para fines de demostración */
     color: white;
@@ -202,7 +208,7 @@ a {
     text-align: justify;
     background-color: #F6F6F6; /* Color de fondo para fines de demostración */
     font-family: Helvetica, Arial, sans-serif;
-    font-size: calc(1vw + 1vh); /* Utilizando una combinación de vw y vh */
+    font-size: calc(0.9vw + 0.9vh); /* Utilizando una combinación de vw y vh */
     margin: 0 auto; /* Centra horizontalmente el contenido */
 }
 
@@ -224,7 +230,7 @@ a {
     display: flex;
     justify-content: center !important;
     align-items: center !important;
-    padding: 2%; /* Ajuste el espacio interior */
+
     flex-direction:row !important;
 }
 
@@ -238,31 +244,19 @@ a {
 }
 
 .resumebtn {
-    margin: 5% auto; /* Cambiado para centrar horizontalmente */
-    display: flex;
-    justify-content: center !important;
-    font-weight: bold;
-    padding: 1vh 2vw; /* Ajuste el padding */
-    border-bottom: 5px solid #9CCD00;
-    text-decoration: none;
-    color: black;
-}
-
-
-.resumebtn {
 
     margin:5% 40%;
     display: flex;
     justify-content: center !important;
     font-weight: bold;
     padding: 1vh 2vw; /* Ajuste el padding */
-    border-bottom: 5px solid #9CCD00;
+    border-bottom: 5px solid #00CFB1;
     text-decoration: none;
     color: black;
 }
 
 a.resumebtn:hover{
-    color:#9CCD00;
+    color:#00CFB1;
 }
 .certifications p{
     font-size: calc(0.5vw + 1vh);
@@ -303,4 +297,13 @@ a.resumebtn:hover{
 footer{
     text-align: center;
     font-size: calc(1vw + 1vh); /* Utilizando una combinación de vw y vh */
+}
+.ContAbout{
+    text-align: center !important;
+    align-items: center;
+}
+.photo{
+    width: 17vw; /* Tamaño de las imágenes */
+    height: 17vw; /* Tamaño de las imágenes */
+    border-radius: 50%;
 }
