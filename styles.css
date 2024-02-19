@@ -31,7 +31,7 @@ body {
 .navbar-menu a {
     color: black;
     padding: 0 10px;
-    
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
     padding-top: 10%;
 }
   
@@ -66,6 +66,7 @@ body {
         text-decoration: none;
         color: black;
         font-size: calc(1vw + 1vh);
+        
     }
 }
 
@@ -93,7 +94,7 @@ div.principal{
 
 h1.titulo{
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 8vw ; 
+    font-size: calc(8vw + 5vh); 
     margin: 0 0 0 5%;
 
 }
@@ -106,7 +107,7 @@ h1.titulo{
 
 .rainbow-text {
     
-    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de texto */
     background-image: linear-gradient(to right, #09C686, #00CFB1,#F6E40F, #9CCD00,#82b21e,#09C686); /* Fondo degradado arcoíris */
     background-clip: text; /* Clip de texto para aplicar el degradado */
     color: transparent; /* Color de texto transparente */
@@ -230,7 +231,6 @@ a {
     display: flex;
     justify-content: center !important;
     align-items: center !important;
-
     flex-direction:row !important;
 }
 
