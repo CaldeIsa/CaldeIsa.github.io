@@ -1,0 +1,306 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:black;
+    background-color: white;
+}
+  
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+  
+.navbar-icon {
+    margin-right: 20px;
+    cursor: pointer;
+}
+  
+.navbar-menu {
+    padding-left: 4%;
+    margin-top: 3%;
+    display: flex;
+}
+  
+.navbar-menu a {
+    color: black;
+    padding: 0 10px;
+    
+    padding-top: 10%;
+}
+  
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: relative;
+    }
+    
+    .navbar-icon {
+        display: block; /* Mostrar el icono del menú en pantallas más pequeñas */
+        margin-right: 5vw; /* Ajuste del margen derecho */
+        cursor: pointer;
+    }
+    
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 5vh; /* Ajuste de la posición vertical */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navbar-menu.active a {
+        padding: 2vh 5vw; /* Ajuste del padding */
+        text-decoration: none;
+        color: black;
+        font-size: calc(1vw + 1vh);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navbar-icon {
+        display: none; /* Ocultar el icono del menú en pantallas más grandes */
+    }
+    
+    .navbar-menu {
+        display: flex;
+    }
+
+    .navbar-menu a {
+        color: black;
+        text-decoration: none;
+        padding: 0 1vw; /* Ajuste del padding horizontal */
+    }
+}
+
+div.principal{
+    margin-bottom: 30%;
+    padding-top: 10%;
+}
+
+h1.titulo{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 8vw ; 
+    margin: 0 0 0 5%;
+}
+.subtitle {
+    margin: 0 0 0 6vw; /* Margen izquierdo y derecho del 10% del ancho de la ventana */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(0.5vw + 1vh); /* Utilizando una combinación de vw y vh */
+}
+
+.rainbow-text {
+    z-index: 1;
+    color: transparent; /* Hace que el texto sea transparente */
+    background-image: linear-gradient(to right, #09C686, #00CFB1,#F6E40F, #9CCD00,#82b21e,#09C686); /* Fondo degradado arcoíris */
+    background-clip: text; /* Clip de texto para aplicar el degradado */
+    -webkit-text-fill-color: transparent; /* Color de texto transparente */
+    background-size: 200% auto; /* Tamaño del fondo para permitir el desplazamiento */
+    animation: rainbow-animation 10s linear infinite forwards; /* Animación de arcoíris */
+}
+  
+@keyframes rainbow-animation {
+    0% {
+        background-position: 100% 0%; /* Posición inicial */
+    }
+    100% {
+        background-position: -100% 50%; /* Posición final */
+    }
+}
+  
+a:hover {
+    color:var(--border-color);
+}
+  
+a[href="#principal"] {
+    --border-color: #09C686;
+}
+
+a[href="#information"] {
+    --border-color: #00CFB1;
+}
+
+a[href="#education"] {
+    --border-color:#F6E40F;
+}
+
+a[href="#aboutme"] {
+    --border-color: #9CCD00;
+}
+
+a[href="#contact"] {
+    --border-color: #82b21e;
+}
+
+a {
+    text-decoration: none; /* Eliminar subrayado predeterminado */
+    border-bottom: solid 3px var(--border-color); /* Establecer el borde inferior */
+    padding-bottom: 2% !important; /* Ajustar el espacio entre el texto y el borde inferior */
+    transition: background-color 0.3s; /* Agregar una transición suave */
+}
+
+#myBtn {
+    position: fixed; /* Fija el botón en la ventana del navegador */
+    bottom: 7%; /* Coloca el botón cerca del borde inferior */
+    right: 7%; /* Coloca el botón cerca del borde derecho */
+    z-index: 99; /* Asegura que el botón esté encima de otros elementos */
+    border: none; /* Quita el borde del botón */
+    outline: none; /* Quita el contorno al hacer click */
+    color: white; /* Cambia el color del texto a blanco */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    padding: 2vh; /* Ajusta el espacio dentro del botón */
+    border-radius: 50%; /* Hace que el botón tenga forma circular */
+    background-color: #1B1F23;
+    font-size: 2vw; /* Tamaño de fuente responsive */
+}
+  
+#myBtn:hover {
+    background-color: lightgray; /* Cambia el color de fondo al pasar sobre el botón */
+}
+  
+.contenedor {
+    padding: 10% 3% 0% 3%;
+    display: flex;
+}
+
+.izquierda,
+.derecha {
+    flex: 1;
+    height: 500px; /* Todos los contenedores tendrán la misma altura */
+    max-width: 50%; /* Cada contenedor ocupará la mitad del ancho disponible */
+    display: flex;
+    justify-content: center;
+}
+
+.izquierda {
+    
+    align-items: center;
+    background-color: #09C686; /* Color de fondo para fines de demostración */
+    color: white;
+    text-align: center;
+    font-size: calc(1vw + 1vh); /* Utilizando una combinación de vw y vh */
+}
+
+.derecha {
+
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: left; /* Centra el contenido horizontalmente */
+    padding: 0% 2%;
+    color: black;
+    text-align: justify;
+    background-color: #F6F6F6; /* Color de fondo para fines de demostración */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(1vw + 1vh); /* Utilizando una combinación de vw y vh */
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+}
+
+
+.IN{
+    background-color: #00CFB1;
+}
+.AM{
+    background-color: #9CCD00;
+}
+.ED{
+    background-color: #F6E40F;
+}
+.CO{
+   background-color: #82b21e;
+}
+
+.derecha.media {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 2%; /* Ajuste el espacio interior */
+    flex-direction:row !important;
+}
+
+.derecha.media a {
+    margin: 0 1vw; /* Espacio entre cada enlace */
+}
+
+.derecha.media img.social {
+    width: 7vw; /* Tamaño de las imágenes */
+    height: 7vw; /* Tamaño de las imágenes */
+}
+
+.resumebtn {
+    margin: 5% auto; /* Cambiado para centrar horizontalmente */
+    display: flex;
+    justify-content: center !important;
+    font-weight: bold;
+    padding: 1vh 2vw; /* Ajuste el padding */
+    border-bottom: 5px solid #9CCD00;
+    text-decoration: none;
+    color: black;
+}
+
+
+.resumebtn {
+
+    margin:5% 40%;
+    display: flex;
+    justify-content: center !important;
+    font-weight: bold;
+    padding: 1vh 2vw; /* Ajuste el padding */
+    border-bottom: 5px solid #9CCD00;
+    text-decoration: none;
+    color: black;
+}
+
+a.resumebtn:hover{
+    color:#9CCD00;
+}
+.certifications p{
+    font-size: calc(0.5vw + 1vh);
+}
+.certifications h4{
+    margin-bottom: 0px;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+/* Estilos para la imagen dentro del pop-up */
+.popup-image {
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para el botón de cierre */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #888;
+}
+footer{
+    text-align: center;
+    font-size: calc(1vw + 1vh); /* Utilizando una combinación de vw y vh */
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Portafolio</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="navbar-menu">
+            <a href="#principal">PRINCIPAL</a>
+            <a href="#information">INFORMATION</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#aboutme">ABOUT ME</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Ir arriba"><i class="fas fa-arrow-up"></i></button>
+
+    <div class="principal " id="principal">
+        <h1 class="titulo rainbow-text">Isaac</h1>
+        <h1 class="titulo rainbow-text">Calderón Navarro</h1>
+        <h3 class="subtitle">SYSTEMS ENGINEER / GRAPHIC DESIGNER</h3>
+    </div>
+
+    <div class="contenedor" id="information">
+        <div class="izquierda IN">
+          <h1>INFORMATION</h1>
+        </div>
+        <div class="derecha">
+          <p>Systems Engineering student hailing from Costa Rica, 
+            driven by a fervent passion for software development and adept at solving intricate technological challenges. 
+            Proficient in multiple programming languages, equipped with comprehensive database expertise, adept in web development, 
+            and possessing analytical prowess for data analysis, I bring a versatile skill set to the table.</p>
+        </div>
+    </div>  
+    
+    <div class="contenedor" id="education">
+        <div class="izquierda ED">
+          <h1>EDUCATION</h1>
+        </div>
+        <div class="derecha certifications">
+            <h4>BACHELOR'S DEGREE - SYSTEMS ENGINEERING</h4>
+            <p>Universidad Nacional de Costa Rica</P>
+
+            <h4>BACHELOR'S DEGREE - GRAPHIC DESIGN</h4>
+            <p>Universidad de Costa Rica</p>
+
+            <h4>CERTIFICATE OF COSTUMER SERVICE</h4>
+            <p>Instituto Nacional de Aprendizaje</p>
+
+            <h4>ADVANCED CONVERSATIONAL ENGLISH</h4>
+            <p>American Business Academy</p>
+
+        </div>
+    </div>
+
+    <div class="contenedor" id="aboutme">
+        <div class="izquierda AM">
+          <h1>ABOUT ME</h1>
+        </div>
+        <div class="derecha">
+          <p>Systems Engineering student hailing from Costa Rica, 
+            driven by a fervent passion for software development and adept at solving intricate technological challenges. 
+            Proficient in multiple programming languages, equipped with comprehensive database expertise, adept in web development, 
+            and possessing analytical prowess for data analysis, I bring a versatile skill set to the table.</p>
+            <a class="resumebtn" href="https://acrobat.adobe.com/id/urn:aaid:sc:US:29510762-a9a9-4e4e-a929-6f329ae4a949">RESUME</a>
+        </div>
+    </div>
+
+    <div class="contenedor" id="contact">
+        <div class="izquierda CO ">
+          <h1>CONTACT</h1>
+        </div>
+        <div class="derecha media">
+            <a href="https://www.linkedin.com/in/isaac-calderón-navarro">
+                <img class="social" src="linkedin.png" alt="LinkedIn">
+            </a>
+    
+            <a href="mailto:isaac.calderon.navarro@outlook.com">
+                <img class="social" src="outlook.png" alt="Outlook">
+            </a>
+            <a style="cursor: pointer;" target="_blank"  onclick="openPopup()">
+                <img class="social" src="whatsapp.png" alt="WhatsApp">
+            </a>
+
+            <div class="popup-container" id="popup">
+                <!-- Botón para cerrar el pop-up -->
+                <span class="popup-close" onclick="closePopup()">X</span>
+                <!-- Imagen dentro del pop-up -->
+                <img class="popup-image" src="WAcontact.jpeg" alt="Imagen">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <h6>THIS IS A PROGRAM CREATED WITH HTML, CSS AND JAVASCRIPT  </h6>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
