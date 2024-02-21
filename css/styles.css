@@ -60,7 +60,7 @@ a {
 }
   
 .contenedor {
-    margin: 20% 3% 10% 8%;
+    margin: 30% 3% 10% 8%;
     display: flex;
 }
 
@@ -70,7 +70,6 @@ a {
     height: 600px; /* Todos los contenedores tendrán la misma altura */
     display: flex;
     justify-content: center;
-    
 }
 
 .izquierda {

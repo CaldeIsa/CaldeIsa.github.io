@@ -1,8 +1,7 @@
 document.querySelector('.navbar-icon').addEventListener('click', function() {
     document.querySelector('.navbar-menu').classList.toggle('active');
   });
-// Asignar la función de descarga al evento click del botón
-document.getElementById("btnDescargar").addEventListener("click", descargarDocumento);
+
 function enviarCorreo() {
     // Dirección de correo electrónico a la que se enviará el correo
     var destinatario = "isaac.calderon.navarro@outlook.com";
