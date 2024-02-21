@@ -1,0 +1,19 @@
+.rainbow-text {
+    
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+    background-image: linear-gradient(to right, white,#ffffff, #cad2c5, #354f52,white); /* Fondo degradado arcoíris */
+    background-clip: text; /* Clip de texto para aplicar el degradado */
+    color: transparent; /* Color de texto transparente */
+    background-size: 200% auto; /* Tamaño del fondo para permitir el desplazamiento */
+    animation: rainbow-animation 8s linear infinite forwards; /* Animación de arcoíris */
+    
+}
+  
+@keyframes rainbow-animation {
+    0% {
+        background-position: 100% 0%; /* Posición inicial */
+    }
+    100% {
+        background-position: -100% 50%; /* Posición final */
+    }
+}
