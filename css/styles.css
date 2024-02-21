@@ -70,7 +70,7 @@ a.resumebtn{
 }
   
 .contenedor {
-    margin: 30% 3% 10% 8%;
+    margin: 55% 3% 10% 8%;
     display: flex;
 }
 
@@ -97,7 +97,7 @@ a.resumebtn{
     padding: 0% 2%;
     color: white;
     text-align: justify;
-    background-color: hsla(0, 0%, 96%, 0.393); /* Color de fondo para fines de demostración */
+    background-color: hsla(0, 0%, 20%, 0.592);
     font-family: Helvetica, Arial, sans-serif;
     font-size: calc(0.9vw + 0.9vh); /* Utilizando una combinación de vw y vh */
     margin: 0 auto; /* Centra horizontalmente el contenido */
@@ -108,6 +108,12 @@ a.resumebtn{
     justify-content: center !important;
     align-items: center !important;
     flex-direction:row !important;
+    height: 200px;
+    background-color: transparent;
+}
+
+.izquierda.media{
+    height: 200px;
 }
 
 .derecha.media a {
@@ -115,8 +121,8 @@ a.resumebtn{
 }
 
 .derecha.media img.social {
-    width: 7vw; /* Tamaño de las imágenes */
-    height: 7vw; /* Tamaño de las imágenes */
+    width: 6vw; /* Tamaño de las imágenes */
+    height: 6vw; /* Tamaño de las imágenes */
 }
 
 .certifications p{
@@ -158,7 +164,11 @@ a.resumebtn{
 footer{
     color: white;
     text-align: center;
-    font-size: calc(0.5vw + 0.5vh); /* Utilizando una combinación de vw y vh */
+    font-size: calc(0.6vw + 0.6vh); /* Utilizando una combinación de vw y vh */
+}
+.contenedor.contact{
+    margin-top: 30%;
+    margin-bottom: 20%;
 }
 .ContAbout{
     text-align: center !important;
@@ -189,7 +199,7 @@ footer{
         margin: 0 0 0 6%;
     }
     .principal{
-        margin: 70% 0% !important;
+        margin: 50% 0% 80% 0% !important;
     }
     .contenedor{
         display: block;
