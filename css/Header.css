@@ -12,13 +12,14 @@ body {
     background-color: hsla(0, 0%, 20%, 0.592);
     padding-top: 10%;
     transition: width 0.3s; /* Transición suave para el cambio de ancho */
+    border-right: solid 1px white;
   }
   
   .navbar a {
     margin-top: 20%;
     display: block;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-decoration: none;
   }
   

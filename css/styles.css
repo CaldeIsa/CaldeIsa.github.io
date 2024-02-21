@@ -54,13 +54,15 @@ a {
 a.resumebtn{
     color: white;
     background-color: #1B1F23;
-    margin:5% 40%;
+    margin:5% 35%;
+
+    justify-content: center;
     display: flex;
     text-align: center;
     font-weight: bold;
     padding: 2vh 2vw; /* Ajuste el padding */
     text-decoration: none;
-    border-radius: 20%;
+    border-radius: 10%;
 } 
 
 #myBtn:hover,a.resumebtn:hover {
@@ -177,10 +179,17 @@ footer{
 
 @media screen and (max-width: 768px) {
 
+    .scrollDown{
+        left: 50% !important;
+    }
     p.titulo{
+
         font-family: Helvetica, Arial, sans-serif;
         font-size: calc(3vw + 4vh); 
         margin: 0 0 0 6%;
+    }
+    .principal{
+        margin: 70% 0% !important;
     }
     .contenedor{
         display: block;
