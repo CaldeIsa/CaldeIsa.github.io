@@ -1,79 +1,85 @@
-.navbar {
-    display: flex;
-    align-items: center;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
     position: fixed;
-    top:0;
-    width: 100%;
-    z-index: 1000;
-    background-color:#111111;
-    justify-content: center;
-    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3); /* Sombra del borde */
-    
-}
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    transition: width 0.3s; /* Transición suave para el cambio de ancho */
+  }
   
-.navbar-icon {
-    cursor: pointer;
-}
+  .navbar a {
+    margin-top: 10%;
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
   
-.navbar-menu {
-    margin-top: 3%;
+  .navbar a:hover {
+    background-color: #555;
+  }
+  
+  .navbar-menu {
     display: flex;
-    padding-bottom: 2%;
-}
+    flex-direction: column;
+  }
   
-.navbar-menu a {
-    color: white !important;
-    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-    padding-top: 10%;
-}
+  .content {
+    margin-left: 200px; /* Ajusta el margen izquierdo para dejar espacio para el navbar */
+    padding: 20px;
+  }
   
-@media screen and (max-width: 768px) {
+  .navbar-icon {
+    cursor: pointer;
+    display: none; /* Ocultar el icono del menú por defecto */
+  }
+  
+  @media screen and (max-width: 768px) {
     .navbar {
-        position: relative;
+      width: 0; /* Ocultar el navbar en pantallas pequeñas */
     }
-    
+  
     .navbar-icon {
-        display: block; /* Mostrar el icono del menú en pantallas más pequeñas */
-        margin-right: 5vw; /* Ajuste del margen derecho */
-        cursor: pointer;
+      display: block; /* Mostrar el icono del menú en pantallas más pequeñas */
+      margin-left: 20px; /* Ajuste del margen derecho */
+      background-color: hsla(0, 0%, 20%, 0.612);
     }
-    
+  
     .navbar-menu {
-        display: none;
-        position: absolute;
-        top: 5vh; /* Ajuste de la posición vertical */
-        left: 0;
-        width: 100%;
-        background-color: white;
-        z-index: 1;
+      width: 0;
+      overflow: hidden;
+      background-color: hsla(0, 0%, 20%, 0.612);
+      height: 100%;
+      transition: width 0.3s ease; /* Transición suave para el despliegue */
     }
-
+  
     .navbar-menu.active {
-        display: flex;
-        flex-direction: column;
+      width: 200px; /* Ancho del menú desplegado */
     }
-    
-    .navbar-menu.active a {
-        padding: 2vh 5vw; /* Ajuste del padding */
-        text-decoration: none;
-        color: black;
-        font-size: calc(1vw + 1vh);
-        
+  
+    .content {
+      margin-left: 0; /* Ajustar el margen izquierdo cuando el navbar está oculto */
     }
-}
+  }
+  
 
-@media screen and (min-width: 769px) {
-    .navbar-icon {
-        display: none; /* Ocultar el icono del menú en pantallas más grandes */
-    }
-    
-    .navbar-menu {
-        display: flex;
-    }
 
-    .navbar-menu a {
-        color: black;
-        text-decoration: none;
-        padding: 0 1vw; /* Ajuste del padding horizontal */
-    }
-}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/Background.jpg');
+    background-size: cover;
+    filter: blur(15px);
+    opacity: 0.3; /* ajusta la opacidad según lo necesites */
+    z-index: -1;
+  }

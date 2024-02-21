@@ -43,4 +43,7 @@ function topFunction() {
   document.body.scrollTop = 0; // Para navegadores que no son Safari
   document.documentElement.scrollTop = 0; // Para Safari
 }
-
+function toggleNavbar() {
+  var navbarMenu = document.getElementById("navbarMenu");
+  navbarMenu.classList.toggle("active");
+}

@@ -1,0 +1,308 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:white;
+    background-color: #000000;
+    padding: 0;
+
+}
+
+div.principal{
+    align-items: center;
+    text-align: center;
+    margin: 5% 15%;
+    border-radius: 10%;
+    padding: 5%;
+}
+
+p.titulo{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(3vw + 5vh); 
+    margin: 0 0 0 5%;
+
+}
+p.subtitle {
+    margin: 0 0 0 6vw; /* Margen izquierdo y derecho del 10% del ancho de la ventana */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(0.8vw + 1vh); /* Utilizando una combinación de vw y vh */
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 2%;
+}
+
+.rainbow-text {
+    
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+    background-image: linear-gradient(to right, white,#ffffff, #cad2c5, #354f52,white); /* Fondo degradado arcoíris */
+    background-clip: text; /* Clip de texto para aplicar el degradado */
+    color: transparent; /* Color de texto transparente */
+    background-size: 200% auto; /* Tamaño del fondo para permitir el desplazamiento */
+    animation: rainbow-animation 8s linear infinite forwards; /* Animación de arcoíris */
+    
+}
+  
+@keyframes rainbow-animation {
+    0% {
+        background-position: 100% 0%; /* Posición inicial */
+    }
+    100% {
+        background-position: -100% 50%; /* Posición final */
+    }
+}
+  
+a:hover {
+    border-bottom: solid 2px white;
+}
+  
+a[href="#principal"] {
+    --border-color: ;
+}
+
+a[href="#information"] {
+    --border-color: #52796f;
+}
+
+a[href="#education"] {
+    --border-color:#354f52;
+}
+
+a[href="#aboutme"] {
+    --border-color: #354f52;
+}
+
+a[href="#contact"] {
+    --border-color: #2f3e46;
+}
+
+a {
+    text-decoration: none; /* Eliminar subrayado predeterminado */
+    padding-bottom: 2% !important; /* Ajustar el espacio entre el texto y el borde inferior */
+    transition: background-color 0.3s; /* Agregar una transición suave */
+}
+
+#myBtn {
+    position: fixed; /* Fija el botón en la ventana del navegador */
+    bottom: 7%; /* Coloca el botón cerca del borde inferior */
+    right: 7%; /* Coloca el botón cerca del borde derecho */
+    z-index: 99; /* Asegura que el botón esté encima de otros elementos */
+    border: none; /* Quita el borde del botón */
+    outline: none; /* Quita el contorno al hacer click */
+    color: white; /* Cambia el color del texto a blanco */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    padding: 2vh; /* Ajusta el espacio dentro del botón */
+    border-radius: 50%; /* Hace que el botón tenga forma circular */
+    background-color: #1B1F23;
+    font-size: 2vw; /* Tamaño de fuente responsive */
+}
+  
+#myBtn:hover {
+    background-color: lightgray; /* Cambia el color de fondo al pasar sobre el botón */
+}
+  
+.contenedor {
+    margin: 20% 3% 10% 8%;
+    display: flex;
+    border-radius: 3%;
+}
+
+.izquierda,
+.derecha {
+    flex: 1;
+    height: 400px; /* Todos los contenedores tendrán la misma altura */
+    max-width: 50%; /* Cada contenedor ocupará la mitad del ancho disponible */
+    display: flex;
+    justify-content: center;
+    
+}
+
+.izquierda {
+    font-family: Helvetica, Arial, sans-serif;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    text-shadow: 2px 4px 10px #ffffff4d;
+    padding: 0% 2%;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: calc(1.5vw + 1.5vh); /* Utilizando una combinación de vw y vh */
+    background-color: transparent !important;
+}
+
+.derecha {
+    border-radius: 3%;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: left; /* Centra el contenido horizontalmente */
+    padding: 0% 2%;
+    color: white;
+    text-align: justify;
+    background-color: hsla(0, 0%, 96%, 0.393); /* Color de fondo para fines de demostración */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(0.9vw + 0.9vh); /* Utilizando una combinación de vw y vh */
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+}
+
+.derecha.media {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction:row !important;
+}
+
+.derecha.media a {
+    margin: 0 1vw; /* Espacio entre cada enlace */
+}
+
+.derecha.media img.social {
+    width: 7vw; /* Tamaño de las imágenes */
+    height: 7vw; /* Tamaño de las imágenes */
+}
+
+.resumebtn {
+
+    margin:5% 40%;
+    display: flex;
+    justify-content: center !important;
+    font-weight: bold;
+    padding: 1vh 2vw; /* Ajuste el padding */
+    border-bottom: 5px solid #84a98c;
+    text-decoration: none;
+    color: black;
+}
+
+a.resumebtn:hover{
+    color:white;
+    background-color:#84a98c;
+    border-bottom: 5px solid #84a98c;
+}
+.certifications p{
+    font-size: calc(0.5vw + 1vh);
+}
+.certifications h4{
+    margin-bottom: 0px;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+/* Estilos para la imagen dentro del pop-up */
+.popup-image {
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para el botón de cierre */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #888;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-size: calc(0.5vw + 0.5vh); /* Utilizando una combinación de vw y vh */
+}
+.ContAbout{
+    text-align: center !important;
+    align-items: center;
+}
+.photo{
+    width: 17vw; /* Tamaño de las imágenes */
+    height: 17vw; /* Tamaño de las imágenes */
+    border-radius: 50%;
+}
+@keyframes scale-up {
+	to { scale: 1.5; }
+}
+
+@keyframes fade-away {
+	to { opacity: 0; }
+}
+
+
+
+section {
+	view-timeline: --scroll;
+}
+
+h1 p:first-child {
+	animation: fade-away both linear;
+	animation-timeline: --scroll;
+	animation-range: exit 20% exit 90%;
+}
+
+h1 p:last-child {
+	animation:
+		scale-up both ease-in-out,
+		fade-away both linear;
+	animation-timeline: --scroll;
+	animation-range:
+		exit 0% exit 100%,
+		exit 50% exit 90%;	
+}
+
+section {
+	position: relative;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+h1 p:first-of-type {
+	color: yellow;
+	font-size: 0.35em;
+}
+
+section:nth-of-type(1) {
+	height: 100vh;
+}
+
+section:nth-of-type(2) {
+	height: 140vh;
+}
+
+h1 {
+	display: grid;
+}
+
+h2 {
+	font-size: clamp(2rem, 5vw + 1rem, 6rem);
+	text-align: center;
+}
+
+section div {
+	width: 800px;
+	max-width: 100vw;
+	padding: 0 1rem;
+}
+
+:is(h1, h2) {
+	font-size: clamp(2.5rem, 7vw + 1rem, 10rem);
+	text-align: center;
+	line-height: 1;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	translate: -50% -50%;
+	width: 100%;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+

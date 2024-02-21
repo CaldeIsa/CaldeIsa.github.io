@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/Header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -14,7 +14,7 @@
     <title>Portafolio</title>
 </head>
 <body>
-
+    <div class="background"></div>
     <nav class="navbar">
         <div class="navbar-icon">
             <i class="fas fa-bars"></i>
@@ -27,6 +27,8 @@
             <a href="#contact">CONTACT</a>
         </div>
     </nav>
+
+    <div class="content">
     <button onclick="topFunction()" id="myBtn" title="Ir arriba"><i class="fas fa-arrow-up"></i></button>
 
     <div class="principal " id="principal">
@@ -34,18 +36,6 @@
         <p class="titulo rainbow-text">& Graphic Designer</p>
         <p class="subtitle">ISAAC CALDERÓN NAVARRO</p>
     </div> 
-
-    <!--<section>
-        <div>
-          <h1>
-            <p>Isaac Calderón</p>
-            <p class="titulo rainbow-text">Systems Engineer & Graphic Designer</p>
-          </h1>
-        </div>
-      </section>
-      <section>
-        <h3>INFORMATION</h3>
-      </section>-->
 
     <div class="contenedor" id="information">
         <div class="izquierda IN">
@@ -85,7 +75,7 @@
           <p>ABOUT ME</p>
         </div>
         <div class="derecha ContAbout">
-            <img class="photo" src="Profile.jpeg" alt="Profile"> 
+            <img class="photo" src="/images/Profile.jpeg" alt="Profile"> 
             <p>Hello! I'm Isaac Calderón Navarro, 21 years old, and I consider myself focused and sociable. 
             I enjoy interacting with people, learning from their experiences, both professionally and personally. 
             I believe in balancing work with personal life and facing challenges with determination and optimism.</p>
@@ -99,21 +89,21 @@
         </div>
         <div class="derecha media">
             <a href="https://www.linkedin.com/in/isaac-calderón-navarro">
-                <img class="social" src="linkedin.png" alt="LinkedIn">
+                <img class="social" src="/images/linkedin.png" alt="LinkedIn">
             </a>
     
             <a href="mailto:isaac.calderon.navarro@outlook.com">
-                <img class="social" src="outlook.png" alt="Outlook">
+                <img class="social" src="/images/outlook.png" alt="Outlook">
             </a>
             <a style="cursor: pointer;" target="_blank"  onclick="openPopup()">
-                <img class="social" src="whatsapp.png" alt="WhatsApp">
+                <img class="social" src="/images/whatsapp.png" alt="WhatsApp">
             </a>
 
             <div class="popup-container" id="popup">
                 <!-- Botón para cerrar el pop-up -->
                 <span class="popup-close" onclick="closePopup()">X</span>
                 <!-- Imagen dentro del pop-up -->
-                <img class="popup-image" src="WAcontact.jpeg" alt="Imagen">
+                <img class="popup-image" src="/images/WAcontact.jpeg" alt="Imagen">
             </div>
         </div>
     </div>
@@ -122,5 +112,6 @@
         <p>THIS IS A PROGRAM CREATED WITH HTML, CSS AND JAVASCRIPT BY ISAAC CALDERON  </p>
     </footer>
     <script src="script.js"></script>
+    </div>
 </body>
 </html>
