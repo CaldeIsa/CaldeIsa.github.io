@@ -27,11 +27,7 @@ p.subtitle {
     font-family: Helvetica, Arial, sans-serif;
     font-size: calc(0.8vw + 1vh); /* Utilizando una combinación de vw y vh */
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
-    padding-top: 2%;
-}
-
-a:hover {
-    border-bottom: solid 2px white;
+    padding-top: 7dvh;
 }
 
 a {
@@ -54,8 +50,20 @@ a {
     background-color: #1B1F23;
     font-size: 2vw; /* Tamaño de fuente responsive */
 }
-  
-#myBtn:hover {
+
+a.resumebtn{
+    color: white;
+    background-color: #1B1F23;
+    margin:5% 40%;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    padding: 2vh 2vw; /* Ajuste el padding */
+    text-decoration: none;
+    border-radius: 20%;
+} 
+
+#myBtn:hover,a.resumebtn:hover {
     background-color: lightgray; /* Cambia el color de fondo al pasar sobre el botón */
 }
   
@@ -109,23 +117,6 @@ a {
     height: 7vw; /* Tamaño de las imágenes */
 }
 
-.resumebtn {
-
-    margin:5% 40%;
-    display: flex;
-    justify-content: center !important;
-    font-weight: bold;
-    padding: 1vh 2vw; /* Ajuste el padding */
-    border-bottom: 5px solid #84a98c;
-    text-decoration: none;
-    color: black;
-}
-
-a.resumebtn:hover{
-    color:white;
-    background-color:#84a98c;
-    border-bottom: 5px solid #84a98c;
-}
 .certifications p{
     font-size: calc(0.5vw + 1vh);
 }
@@ -184,3 +175,39 @@ footer{
 	to { opacity: 0; }
 }
 
+@media screen and (max-width: 768px) {
+
+    p.titulo{
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: calc(3vw + 4vh); 
+        margin: 0 0 0 6%;
+    }
+    .contenedor{
+        display: block;
+    }
+    .izquierda{
+        height: 100px;
+    }
+    .derecha{
+        height: 400px;
+        font-size: calc(1vw + 1vh);
+        padding: 5% !important;
+    }
+    .derecha,.izquierda{
+        padding: 5% 5%;
+    }
+
+    .derecha.media, .izquierda.media{
+        padding: 1% !important;
+        
+    }
+    .derecha.media{
+        height: 100px;
+        margin-bottom: 50%;
+    }
+    .derecha.media img.social {
+        margin-top: 30%;
+        width: 12vw; /* Tamaño de las imágenes */
+        height: 12vw; /* Tamaño de las imágenes */
+    }
+}
