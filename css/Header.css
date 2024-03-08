@@ -9,7 +9,7 @@ body {
     top: 0;
     width: 200px;
     height: 100%;
-    background-color: hsla(0, 0%, 20%, 0.592);
+    background-color: hsla(0, 9%, 2%, 0.347);
     padding-top: 8%;
     transition: width 0.3s; /* Transición suave para el cambio de ancho */
     border-right: solid 1px white;
@@ -24,7 +24,7 @@ body {
   }
   
   .navbar a:hover {
-    background-color: #555;
+    background-color: #5d5d5d14;
   }
   
   .navbar-menu {
@@ -45,11 +45,13 @@ body {
   @media screen and (max-width: 768px) {
     .navbar {
       width: 0; /* Ocultar el navbar en pantallas pequeñas */
+      border-color:transparent ;
     }
 
     .navbar-icon {
       display: block; /* Mostrar el icono del menú en pantallas más pequeñas */
       margin-left: 20px; /* Ajuste del margen derecho */
+      margin-bottom: 10%;
       background-color: hsla(0, 0%, 20%, 0.612);
     }
   
@@ -81,6 +83,6 @@ body {
     background-image: url('/images/Background.jpg');
     background-size: cover;
     filter: blur(15px);
-    opacity: 0.3; /* ajusta la opacidad según lo necesites */
+    opacity: 0.2; /* ajusta la opacidad*/
     z-index: -1;
   }

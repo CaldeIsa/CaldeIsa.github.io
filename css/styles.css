@@ -47,15 +47,14 @@ a {
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     padding: 2vh; /* Ajusta el espacio dentro del botón */
     border-radius: 50%; /* Hace que el botón tenga forma circular */
-    background-color: #1B1F23;
+    background-color: hsla(0, 5%, 8%, 0.347);
     font-size: 2vw; /* Tamaño de fuente responsive */
 }
 
 a.resumebtn{
     color: white;
-    background-color: #1B1F23;
+    background-color: hsla(0, 5%, 8%, 0.347);
     margin:5% 35%;
-
     justify-content: center;
     display: flex;
     text-align: center;
@@ -66,12 +65,14 @@ a.resumebtn{
 } 
 
 #myBtn:hover,a.resumebtn:hover {
-    background-color: lightgray; /* Cambia el color de fondo al pasar sobre el botón */
+    background-color: #5d5d5d73;
 }
   
 .contenedor {
-    margin: 55% 3% 10% 8%;
+    margin: 50% 3% 10% 8%;
     display: flex;
+    background-color: hsla(0, 9%, 2%, 0.347);
+    border-radius: 3%;
 }
 
 .izquierda,
@@ -79,25 +80,25 @@ a.resumebtn{
     flex: 1;
     height: 600px; /* Todos los contenedores tendrán la misma altura */
     display: flex;
-    justify-content: center;
+ 
 }
 
 .izquierda {
-    text-shadow: 2px 4px 10px #ffffff4d;
+    padding-left: 3%;
     align-items: center;
     color: white;
-    text-align: center;
+    text-align: left;
     font-size: calc(1.5vw + 1.5vh); /* Utilizando una combinación de vw y vh */
 }
 
 .derecha {
+    justify-content: center;
     border-radius: 3%;
     flex-direction: column; /* Apila los elementos verticalmente */
     align-items: left; /* Centra el contenido horizontalmente */
     padding: 0% 2%;
     color: white;
     text-align: justify;
-    background-color: hsla(0, 0%, 20%, 0.592);
     font-family: Helvetica, Arial, sans-serif;
     font-size: calc(0.9vw + 0.9vh); /* Utilizando una combinación de vw y vh */
     margin: 0 auto; /* Centra horizontalmente el contenido */
@@ -206,6 +207,9 @@ footer{
     }
     .izquierda{
         height: 100px;
+        text-align: center!important;
+        justify-content: center;
+        
     }
     .derecha{
         height: 400px;
@@ -229,4 +233,72 @@ footer{
         width: 12vw; /* Tamaño de las imágenes */
         height: 12vw; /* Tamaño de las imágenes */
     }
+}
+
+
+ul {
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    position: relative;
+    width:60px;
+    height:60px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+  }
+  
+  ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+  }
+  
+  ul li a .fab {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
+  }
+  
+  ul li:nth-child(1) a:hover .fab {
+    color: #25d366;
+  }
+  
+  ul li:nth-child(2) a:hover .fab {
+    color: #0e76a8;
+  }
+  
+  ul li:nth-child(3) a:hover .far {
+    color: #e4405f;
+  }
+
+  ul li a .fa-envelope {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
 }

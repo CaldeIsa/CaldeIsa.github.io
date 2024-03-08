@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" media="all" href="style.css" />
+    
     <title>Portafolio</title>
 </head>
 <body>
@@ -46,7 +49,7 @@
                 with solid experience in web development and a specialized focus on front-end development. 
                 Throughout my journey, I have developed strong technical skills and a deep understanding of fundamental design and programming principles. However, beyond technical abilities, I highly value effective communication and teamwork. I firmly believe that success in any project relies on harmonious collaboration and clear communication among all team members. 
                 These principles are foundational in my professional development, and I diligently apply them to every project I engage in.</p>
-                <a class="resumebtn" href="https://acrobat.adobe.com/id/urn:aaid:sc:US:29510762-a9a9-4e4e-a929-6f329ae4a949">RESUME</a>
+                <a class="resumebtn" href="sources/Resume.pdf">RESUME</a>
             </div>
         </div>  
         
@@ -87,27 +90,19 @@
             <div class="izquierda media">
             <p>CONTACT</p>
             </div>
-            <div class="derecha media">
-                <a href="https://www.linkedin.com/in/isaac-calderón-navarro">
-                    <img class="social" src="/images/linkedin.png" alt="LinkedIn">
-                </a>
-        
-                <a href="mailto:isaac.calderon.navarro@outlook.com">
-                    <img class="social" src="/images/outlook.png" alt="Outlook">
-                </a>
-                <a style="cursor: pointer;" target="_blank"  onclick="openPopup()">
-                    <img class="social" src="/images/whatsapp.png" alt="WhatsApp">
-                </a>
-
-                <div class="popup-container" id="popup">
-                    <!-- Botón para cerrar el pop-up -->
-                    <span class="popup-close" onclick="closePopup()">X</span>
-                    <!-- Imagen dentro del pop-up -->
-                    <img class="popup-image" src="/images/WAcontact.jpeg" alt="Imagen">
-                </div>
+            <div class="derecha media">    
+                <ul>
+                    <li><a style="cursor: pointer;" target="_blank" onclick="openPopup()"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/isaac-calderón-navarro"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:isaac.calderon.navarro@outlook.com"><i class="far fa-envelope" aria-hidden="true"></i></a></li>
+                    <div class="popup-container" id="popup">
+                        <span class="popup-close" onclick="closePopup()">X</span>
+                        <img class="popup-image" src="/images/WAcontact.jpeg" alt="Imagen">
+                    </div>
+                </ul>
             </div>
         </div>
-        
+          
         <footer>
             <p>THIS IS A RESPONSIVE WEB PAGE CREATED WITH HTML, CSS AND JAVASCRIPT BY ISAAC CALDERON  </p>
         </footer>
