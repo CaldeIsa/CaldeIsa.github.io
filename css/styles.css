@@ -206,13 +206,13 @@ footer{
         display: block;
     }
     .izquierda{
-        height: 100px;
+        height: 50px;
         text-align: center!important;
         justify-content: center;
-        
+
     }
     .derecha{
-        height: 400px;
+        height: 300px;
         font-size: calc(1vw + 1vh);
         padding: 5% !important;
     }
