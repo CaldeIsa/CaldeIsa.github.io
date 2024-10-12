@@ -1,0 +1,29 @@
+.Big-Text{
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Nunito Sans";
+    font-size: clamp(25px,7vw,78px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 61.538% */
+    align-self: flex-start;
+}
+.Big-Text2{
+    color: #ffffff;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: clamp;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 133.333% */
+}
+.Big-Title{
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Nunito";
+    font-size: clamp(25px,7vw,78px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 61.538% */
+    margin-bottom: 5%;
+}

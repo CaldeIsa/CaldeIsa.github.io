@@ -1,0 +1,464 @@
+/* Estilos para el video de fondo */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* El video cubre todo el fondo sin distorsión */
+}
+
+/* Estilos para el contenido que se desplazará */
+
+.Content-Container{
+    position: relative;
+    z-index: 1;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    justify-content: center; /* centra el div hijo horizontalmente */
+    align-items: center; /* centra el div hijo verticalmente */
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Nunito Sans";
+}
+
+.Container1{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-align: center;
+    max-width: 900px;
+    margin:0 auto;
+    padding: 11% 0;
+}
+.Container2{
+    z-index: 2;
+    top: 100px; 
+    width: 100%;
+    left:0;
+
+}
+
+.SubContainer{
+    margin-top: 5%;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    padding: 5%;
+    text-align: justify;
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+
+}
+.SubT{
+  margin: 2% 0 ;
+  width: 100%;
+}
+
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .custom-button {
+    width: 80%;
+    border: 0 ;
+    padding: 10px 30px;
+    
+    font-weight: 500;
+    background-color: white;
+    color: #4B0082; /* Color de texto morado */
+    cursor: pointer;
+    border-radius: 25px;
+    transition: color 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    font-family: "Nunito";
+  }
+  
+  .custom-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-emphasis-color: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0); /* Colores rosado y turquesa */
+    z-index: -1;
+    transition: transform 0.4s ease-in-out;
+    transform: scaleX(0); /* Inicialmente el gradiente está oculto */
+    transform-origin: left;
+    background-color: white;
+  }
+  
+  .custom-button:hover::before {
+    transform: scaleX(1); /* Al pasar el ratón, el gradiente cubre el botón */
+    transform-origin: right;
+  }
+  
+  .custom-button:hover {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0); /* Letras cambian a gradiente */
+    background-size: 300%;
+    background-position: 100%;
+  }
+
+.Trasparent-Text-container{
+    margin: 20px 0 5px 0;
+    text-align: left;
+    color: black;
+    margin-left: 15px ;
+    
+}
+
+.Transparent-Text{
+    font-size: 36px;
+    font-weight: bold;
+    color: black; /* Para navegadores que no soportan mix-blend-mode */
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: screen; /* Permite que el fondo se vea a través del texto */
+}
+
+.btn-Container1{
+    display: inline-block;
+    justify-content: left;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+.footer{
+    background-color: #FFF;
+    color: black;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.imgBtn{
+    cursor: pointer;
+}
+
+.imgBtn:hover{
+    width: 20%;
+}
+.float{
+    position: absolute;
+    z-index: 3;
+    color: black;
+    left:3%;
+    margin-top: 25px;
+
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.skill-box {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-box i {
+    font-size: 40px;
+    color: #6a1b9a; /* Morado */
+    margin-bottom: 10px;
+}
+
+.skill-box p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.skill-box:hover {
+    transform: scale(1.05); /* Efecto hover */
+    cursor: default;
+}
+.date-time{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+  }
+  
+  .project-box {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-box i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .project-box p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .project-box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+/* Modal Styles */
+.modal {
+    overflow-y: auto;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    overflow-y: auto;
+    height: 70%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  #modal-title {
+    margin-top: 20px;
+    justify-self: center;
+  }
+  
+  #modal-description {
+    margin: 20px 100px;
+  }
+  #modal-description h3{
+    text-align: left;
+  }
+  #modal-description{
+    text-align: justify;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .modal-content {
+    position: relative; /* Asegura que el modal tenga un contexto de posicionamiento */
+    overflow: hidden; /* Oculta las partes de la imagen que excedan el modal */
+    color: black;
+    overflow: auto;
+    height: 70%;
+  }
+  
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .gallery-container img {
+    width: 100px; /* Tamaño inicial de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-container img:hover {
+    transform: scale(10); /* Aumenta el tamaño al pasar el ratón */
+    z-index: 1; /* Asegura que la imagen se muestre encima de otras */
+  }
+  
+  /* Styling for project boxes */
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+  }
+  
+  .project-box {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .project-box i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .project-box p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  .modal p{
+    color:black;
+  }
+  
+  .info-Content{
+    text-align: left;
+    display: flex;
+    margin: 20px 100px;
+  }
+  .info{
+    width: 50%;
+  }
+
+  #modal-area{
+    text-align: justify;
+  }
+
+  .gallery{
+    margin: 20px 100px;
+
+  }
+  .imgProject{
+    height: 30%;
+  }
+
+  .fotoP{
+    border-radius: 1000px;
+    border: 8px solid white;
+    height: 250px;
+    width: 250px;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+
+  .aboutContainer{
+    flex-direction: column !important; 
+    background-color: rgba(0, 0, 0, 0.5); ;
+    color: white;
+    font-size: clamp(1rem, 1.50vw, 2rem);
+    font-weight: 200px;
+    text-align: center;
+  }
+
+  /* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  
+}
+
+/* Móviles medianos (hasta 768px) */
+@media (max-width: 768px) {
+  .button-container{
+    flex-direction: column;
+  }
+  .projects-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fotoP{
+    height: 150px;
+    width: 150px;
+  }
+
+  .skills-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Tablets (hasta 1024px) */
+@media (max-width: 1024px) {
+  
+}
+
+/* Laptops y pantallas medianas (hasta 1200px) */
+@media (max-width: 1200px) {
+  
+}
+
+/* Pantallas grandes (más de 1200px) */
+@media (min-width: 1201px) {
+ 
+}

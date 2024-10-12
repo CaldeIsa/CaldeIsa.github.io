@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" media="all" href="style.css" />
+    <link rel="stylesheet" media="all" href="css/FontStyles.css" />
+    <title>Portafolio</title>
+
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video" playsinline>
+            <source src="images/Background-Video.MOV" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>
+
+    <div class="Content-Container">
+        
+        <!-- Pantalla principal-->
+        <div class="Container1">
+            
+            <label class="Big-Text">Isaac Calderón Navarro</label>
+            
+            <img class="SubT" src="images/SubTitle.png">
+            <div class="date-time" id="dateTimeDisplay" style="margin-bottom: 100px;">
+                <!-- Aquí se mostrará la fecha y la hora -->
+            </div>
+            <div class="button-container">
+                <button class="custom-button" onclick="location.href='#AboutMe'">
+                    <i class="fas fa-user"></i> ABOUT ME
+                </button>
+                <button class="custom-button" onclick="location.href='#Skills'">
+                    <i class="fas fa-lightbulb"></i> SKILLS
+                </button>
+                <button class="custom-button">
+                    <i class="fas fa-briefcase"></i> EXPERIENCE
+                </button>
+                <button class="custom-button">
+                    <i class="fas fa-graduation-cap"></i> EDUCATION
+                </button>
+            </div>
+            
+            <div class="button-container">
+                <button class="custom-button" onclick="location.href='#Projects'">
+                    <i class="fas fa-folder-open"></i> PROJECTS
+                </button>
+                <button class="custom-button" onclick="location.href='#Skills'">
+                    <i class="fas fa-envelope"></i> CONTACT
+                </button>
+            </div>
+            
+        </div>
+            
+        <!-- About me -->
+        <div class="Container1" id="AboutMe">
+            <label class="Big-Title"  >ABOUT ME</label>
+            <div class="SubContainer aboutContainer" >
+                <img class="fotoP" src="images/Perfil3.jpg">
+                <label>
+                    Systems engineer with a passion for software development and solving complex technological challenges. 
+                    Proficient in multiple programming languages, with experience in web development, interface design, 
+                    UX and data analysis, bringing a set of skills in the area of systems development.
+                </label>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="Container1" id="Skills">
+            <label class="Big-Title">SKILLS</label>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <i class="fas fa-user-check"></i>
+                    <p>Adaptability</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-comments"></i>
+                    <p>Communication</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-users"></i>
+                    <p>Team collaboration</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-tools"></i>
+                    <p>Troubleshooting</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-sitemap"></i>
+                    <p>Scrum methodology</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-tasks"></i>
+                    <p>Project management</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects-->
+        <div class="Container1" id="Projects">
+            <label class="Big-Title">PROJECTS</label>
+            <div class="projects-container">
+                <div class="project-box" onclick="openModal('SIDILAB', 
+                    'Sidilab (Laboratory Digitalization System) is a group project aimed at digitizing procedures at the Laboratorio Nacional de Aguas de Costa Rica.'+
+                    '  It is a web application with a primary focus on the quotations module, designed to replace the old paper-based system. This new system enables more efficient request'+
+                    'and generation of quotations, facilitating their subsequent delivery to the study modules.', 
+                    ['C#','GitHub','SQLserver2019','Boostrap'],' My development focus was on user experience. I worked on front-end development and executed integration, usability,'+
+                    ' and heuristic tests, utilizing the Scrum methodology to ensure an agile and collaborative process.', ['images/ss.png', 'img2.jpg'])">
+                    <img class="imgProject" src="images/LogoSIDILAB.png">
+                    
+                </div>
+                <div class="project-box" onclick="openModal('Project 2', 'Description of Project 2...', ['software A', 'software B'], ['Skill A', 'Skill B'], ['img3.jpg', 'img4.jpg'])">
+                    <img class="imgProject" src="images/LogoSIASO.svg">
+                    
+                </div>
+                <div class="project-box" onclick="openModal('Project 2', 'Description of Project 2...', ['software A', 'software B'], ['Skill A', 'Skill B'], ['img3.jpg', 'img4.jpg'])">
+                                        
+                    <img class="imgProject" src="images/LogoSITEA.svg">
+                    
+                </div>
+                <!-- Modal -->
+                <div id="projectModal" class="modal">
+                    <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 id="modal-title">Project Title</h2>
+                    <p id="modal-description">Project description goes here...</p>
+                    <div class="info-Content">
+                        <div class="info">
+                            <h3>Software Used</h3>
+                            <ul id="modal-software-list"></ul>
+                        </div>
+                        <div class="info">
+                            <h3>Development Area</h3>
+                            <h id="modal-area"></h>
+                        </div>
+                    </div>
+                    
+
+                    <h3>Project Gallery</h3>
+                    <div class="gallery">
+                        <video muted id="background-video" playsinline controls>
+                            <source src="images/SIDILAB-1.mp4" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="footer">
+            <label>THIS IS A RESPONSIVE WEB PAGE CREATED WITH HTML, CSS AND JAVASCRIPT BY ISAAC CALDERON  </label>
+            <label>Datos de contacto</label>
+        </div>
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
