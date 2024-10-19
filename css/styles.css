@@ -428,6 +428,35 @@ body, html {
 
 /* Móviles medianos (hasta 768px) */
 @media (max-width: 768px) {
+
+  #modal-description{
+    margin:10px;
+  }
+
+  .info-Content{
+    flex-direction: column;
+    margin: 10px;
+  }
+  .info{
+    width: 100%;
+  }
+
+  .gallery{
+    margin: 10px;
+  }
+
+  .info-Content h3{
+    text-align: center;
+    width: 100%;
+  }
+
+  .modal-content{
+    width: 80%;
+  }
+
+  .Container1{
+    display: table;
+  }
   .button-container{
     flex-direction: column;
   }
