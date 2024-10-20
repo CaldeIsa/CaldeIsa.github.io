@@ -431,7 +431,7 @@ body, html {
     color: white;
     font-size: clamp(1rem, 1.50vw, 2rem);
     font-weight: 200px;
-    text-align: center;
+    text-align: justify;
   }
 
   /* Móviles pequeños (hasta 480px) */
@@ -444,7 +444,7 @@ body, html {
 
   .Info-Education{
     font-size: 10px;
-    padding: 5% !important;
+    padding: 3% !important;
   }
   .imgEducation{
     width: 80px;
@@ -492,8 +492,11 @@ body, html {
   }
 
   .skills-container{
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skill-box{
+    width: 100px;
+    height: 100px;
   }
 }
 
