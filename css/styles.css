@@ -113,6 +113,14 @@ body, html {
     transform: scaleX(1); /* Al pasar el ratón, el gradiente cubre el botón */
     transform-origin: right;
   }
+
+  a.resume{
+    justify-content: center;
+    display: flex;
+    width: 70%;
+    text-decoration: none;
+    margin:5px;
+  }
   
   .custom-button:hover {
     color: transparent;
@@ -279,7 +287,11 @@ body, html {
     overflow-y: auto;
     height: 70%;
   }
-  
+
+.gallery video{
+  width: 100%;
+}
+
   .close {
     position: absolute;
     top: 10px;
@@ -293,7 +305,9 @@ body, html {
     BACKGROUND-COLOR: #4B0082;
     color: white;
     border-radius: 25px;
-    margin:15px;
+    margin:20px;
+    padding: 5px;
+    text-align: center;
   }
   
   #modal-title {
@@ -416,7 +430,7 @@ body, html {
 
   .fotoP{
     border-radius: 1000px;
-    border: 8px solid white;
+    border: 6px solid white;
     height: 250px;
     width: 250px;
     align-self: center;

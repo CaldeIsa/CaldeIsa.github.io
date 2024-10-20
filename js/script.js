@@ -13,22 +13,43 @@ function enviarCorreo() {
     window.open(mailtoLink);
 }
 
-function openModal(title, description, software,area) {
+function openModal(title, description, software, area, videos) {
+  // Set the title, description, and area
   document.getElementById('modal-title').textContent = title;
   document.getElementById('modal-description').textContent = description;
   document.getElementById('modal-area').textContent = area;
 
   // Clear previous software list and add new items
   const softwareList = document.getElementById('modal-software-list');
-  softwareList.innerHTML = '';
+  softwareList.innerHTML = ''; // Clear previous content
   software.forEach(item => {
-    const li = document.createElement('li');
-    li.textContent = item;
-    softwareList.appendChild(li);
+      const li = document.createElement('li');
+      li.textContent = item;
+      softwareList.appendChild(li);
   });
 
+  // Clear previous gallery and add new videos
+  const gallery = document.getElementById('modal-gallery');
+  gallery.innerHTML = ''; // Clear previous content
+
+  videos.forEach(videoSrc => {
+      const video = document.createElement('video');
+      video.controls = true;
+      video.muted = true;
+      video.playsInline = true;
+
+      const source = document.createElement('source');
+      source.src = videoSrc;
+      source.type = 'video/mp4';
+
+      video.appendChild(source);
+      gallery.appendChild(video);
+  });
+
+  // Display the modal
   document.getElementById('projectModal').style.display = 'flex';
 }
+
 
 function closeModal() {
   document.getElementById('projectModal').style.display = 'none';
