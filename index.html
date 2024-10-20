@@ -22,6 +22,7 @@
     <link rel="stylesheet" media="all" href="style.css" />
     <link rel="stylesheet" media="all" href="css/FontStyles.css" />
     <link rel="stylesheet" media="all" href="css/Containers.css" />
+    <link rel="stylesheet" media="all" href="css/images.css" />
 
     <title>Portafolio</title>
 
@@ -132,9 +133,7 @@
         <div class="Container1 " id="Education">
             <label class="Big-Title">EDUCATION</label>
             <div class="Info-Education">
-                <div class="LogoE">
-                    <img class="imgEducation" src="images/LogoUNA.svg">
-                </div>
+               
                 <div class="data-Education">
                     <label>BACHELORS DEGREE-SYSTEMS ENGINEERING</label>
                     <label>Universidad de Costa Rica</label>   
@@ -144,9 +143,7 @@
                 </div>
             </div>
             <div class="Info-Education">
-                <div class="LogoE">
-                    <img class="imgEducation" src="images/Logos/LogoINA.png">
-                </div>
+                
                 <div class="data-Education">
                     <label>CERTIFICATE OF COSTUMER SERVICE</label>
                     <label>Instituto Nacional de aprendizaje</label>   
@@ -156,9 +153,9 @@
                 </div>
             </div>
             <div class="Info-Education">
-                <div class="LogoE">
+                <!--<div class="LogoE">
                     <img class="imgEducation" src="images/LogoABA.svg">
-                </div>
+                </div>-->
                 <div class="data-Education">
                     <label>CERTIFICATE OF ADVANCED CONVERSATIONAL ENGLISH</label>
                     <label>American Business Academy</label>   
@@ -168,9 +165,7 @@
                 </div>
             </div>
             <div class="Info-Education">
-                <div class="LogoE">
-                    <img class="imgEducation" src="images/Logos/LogoAsuncion.png">
-                </div>
+                
                 <div class="data-Education">
                     <label>COURSE OF TECHNOLOGY AND DESIGN OF SMALL SOFTWARE APPLICATION</label>
                     <label>La Asuncion Highschool</label>   
@@ -180,9 +175,7 @@
                 </div>
             </div>
             <div class="Info-Education">
-                <div class="LogoE">
-                    <img class="imgEducation" src="images/LogoAsuncion.svg">
-                </div>
+                
                 <div class="data-Education">
                     <label>COURSE OF INFORMATION AND COMMUNICATION TECHNOLOGY</label>
                     <label>La Asuncion Highschool</label>   
@@ -199,7 +192,7 @@
             <label class="Big-Title">SYSTEMS PROJECTS</label>
             <div class="projects-container">
                 <div class="project-box" onclick="openModal('SIDILAB', 
-                    'SIDILAB (Laboratory Digitalization System) is a group project aimed at digitizing procedures at the Laboratorio Nacional de Aguas de Costa Rica.'+
+                    'SIDILAB (Sistema de Digitalización del Labotario) is a group project aimed at digitizing procedures at the Laboratorio Nacional de Aguas de Costa Rica.'+
                     '  It is a web application with a primary focus on the quotations module, designed to replace the old paper-based system. This new system enables more efficient request'+
                     'and generation of quotations, facilitating their subsequent delivery to the study modules.', 
                     ['C#','GitHub','SQLserver2019','Boostrap'],' My development focus was on user experience. I worked on front-end development and executed integration, usability,'+
@@ -209,11 +202,17 @@
                 </div>
                 <div class="project-box" onclick="openModal('MAGNA SIASO',
                     'Description of Project 2...', 
-                    ['C#', 'HTML','CSS','Javascript'], ['Skill A', 'Skill B'], ['img3.jpg', 'img4.jpg'])">
+                    ['C#', 'Kendo UI', 'HTML','Figma','CSS'], ['Skill A', 'Skill B'], ['img3.jpg', 'img4.jpg'])">
                     <img class="imgProject" src="images/LogoSIASO.svg">
                     
                 </div>
-                <div class="project-box" onclick="openModal('Project 2', 'Description of Project 2...', ['software A', 'software B'], ['Skill A', 'Skill B'], ['img3.jpg', 'img4.jpg'])">
+                <div class="project-box" onclick="openModal('SITEA-UNA', 
+                'SITEA-UNA (Sistema de Tutorias de Éxito Académico de la Universidad Nacional) is a group project focused on automating processes '+
+                'within the Área de Éxito Académico at the Universidad Nacional de Costa Rica. This web-based system leverages Google services through Google Apps Script '+
+                'to streamline various tasks, including form duplication, email notifications, and information display. By automating these processes, SITEA-UNA enhances '+
+                'operational efficiency and provides additional features to support academic success initiatives.', 
+                ['Appscript', 'JavaScript', 'HTML'], ['As the project owner and sole developer of SITEA-UNA,  I designed, developed, tested, and managed the entire system. '+
+                'I handled everything from UI design to automation processes, ensuring the system efficiently met the needs of the Área de Éxito Académico at the Universidad Nacional.'],[])">
                                         
                     <img class="imgProject" src="images/LogoSITEA.svg">
                     

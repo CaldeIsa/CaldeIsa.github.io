@@ -1,0 +1,13 @@
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* El video cubre todo el fondo sin distorsión */
+}
+.fotoP{
+    border-radius: 10px;
+    border: 6px solid white;
+    height: 250px;
+    width: 250px;
+    align-self: center;
+    margin-bottom: 10px;
+  }
