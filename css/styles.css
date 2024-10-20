@@ -221,6 +221,7 @@
     height: 70%;
   }
 
+
 .gallery video{
   width: 100%;
 }
@@ -381,12 +382,18 @@
 /* Móviles medianos (hasta 768px) */
 @media (max-width: 768px) {
 
+  .LogoE{
+    height: 60px !important;
+    width: 60px !important;
+}
+  .custom-button{
+    width: 90%;
+    padding: 10px 0 ;
+  }
+
   .Info-Education{
     font-size: 10px;
     padding: 3% !important;
-  }
-  .imgEducation{
-    width: 80px;
   }
 
   #modal-description{
@@ -426,8 +433,8 @@
   }
 
   .fotoP{
-    height: 150px;
-    width: 150px;
+    height: 150px !important;
+    width: 150px !important;
   }
 
   .skills-container{
