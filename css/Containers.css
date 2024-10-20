@@ -1,0 +1,22 @@
+#Education{
+    width: 100%;
+}
+.Info-Education{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+    height: 10%;
+}
+.LogoE{
+    height: 100%;
+}
+.data-Education{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    text-align: left;
+    justify-content: center;
+    width: 70%;
+}

@@ -288,6 +288,13 @@ body, html {
     color: #333;
     cursor: pointer;
   }
+
+  .modal-content h3{
+    BACKGROUND-COLOR: #4B0082;
+    color: white;
+    border-radius: 25px;
+    margin:15px;
+  }
   
   #modal-title {
     margin-top: 20px;
@@ -400,7 +407,11 @@ body, html {
 
   }
   .imgProject{
-    height: 30%;
+    height: 25%;
+  }
+
+  .imgEducation{
+    height: 100%;
   }
 
   .fotoP{
@@ -411,6 +422,8 @@ body, html {
     align-self: center;
     margin-bottom: 10px;
   }
+
+
 
   .aboutContainer{
     flex-direction: column !important; 
@@ -428,6 +441,14 @@ body, html {
 
 /* Móviles medianos (hasta 768px) */
 @media (max-width: 768px) {
+
+  .Info-Education{
+    font-size: 10px;
+    padding: 5% !important;
+  }
+  .imgEducation{
+    width: 80px;
+  }
 
   #modal-description{
     margin:10px;
@@ -447,7 +468,6 @@ body, html {
 
   .info-Content h3{
     text-align: center;
-    width: 100%;
   }
 
   .modal-content{
