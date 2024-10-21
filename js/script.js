@@ -102,3 +102,29 @@ setInterval(updateDateTime, 1000);
 
 // Llamar a la función para que muestre la fecha y hora al cargar la página
 updateDateTime();
+
+
+
+
+// Obtén el modal y los elementos necesarios
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+const captionText = document.getElementById("caption");
+const closeBtn = document.getElementsByClassName("close1")[0];
+
+// Obtener todas las imágenes con la clase "portfolio-img"
+const images = document.getElementsByClassName("portfolio-img");
+
+// Añadir evento de clic a todas las imágenes
+for (let i = 0; i < images.length; i++) {
+    images[i].onclick = function() {
+        modal.style.display = "block"; // Mostrar el modal
+        modalImg.src = this.src;       // Cambiar la imagen en el modal
+        captionText.innerHTML = this.alt; // Mostrar el alt como descripción
+    }
+}
+
+// Cuando se haga clic en la "X", cerrar el modal
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}

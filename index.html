@@ -62,8 +62,11 @@
             </div>
             
             <div class="button-container">
-                <button class="custom-button" onclick="location.href='#Projects'">
-                    <i class="fas fa-folder-open"></i> PROJECTS
+                <button class="custom-button" onclick="location.href='#SistemsProjects'">
+                    <i class="fas fa-folder-open"></i> SYSTEMS PROJECTS
+                </button>
+                <button class="custom-button" onclick="location.href='#DesingProjects'">
+                    <i class="fas fa-folder-open"></i> DESING PROJECTS
                 </button>
                 <button class="custom-button" onclick="location.href='#Skills'">
                     <i class="fas fa-envelope"></i> CONTACT
@@ -190,7 +193,7 @@
         </div>
 
         <!--SYSTEMS Projects-->
-        <div class="Container1" id="Projects">
+        <div class="Container1" id="SistemsProjects">
             <label class="Big-Title">SYSTEMS PROJECTS</label>
             <div class="projects-container">
                 <div class="project-box" onclick="openModal('SIDILAB', 
@@ -247,13 +250,38 @@
         </div>
 
         <!-- DESIGN PROJECTS -->
-        <div class="Container1" id="Skills">
-            <label class="Big-Title">DESING PROJECTS</label>
-            
+        <div class="Container1" id="DesingProjects">
+            <label class="Big-Title TitleDesing">DESING PROJECTS</label>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <img src="images/FotoPerfil.jpg" alt="Logo 1" class="portfolio-img">
+                    <h3>Logo 1</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/linkedin.png" alt="Infografía 1" class="portfolio-img">
+                    <h3>Infografía 1</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/LogoSIDILAB.png" alt="Anuncio 1" class="portfolio-img">
+                    <h3>Anuncio 1</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="logo2.jpg" alt="Logo 2" class="portfolio-img">
+                    <h3>Logo 2</h3>
+                </div>
+                <!-- Añade más elementos aquí -->
+            </div>
+        
+            <!-- Un solo modal para todas las imágenes -->
+            <div id="modal" class="modal">
+                <span class="close1">&times;</span>
+                <img class="modal-content" id="modalImg">
+                <div id="caption"></div>
+            </div>
         </div>
         
         <!-- DESIGN PROJECTS -->
-        <div class="Container1" id="Skills">
+        <div class="Container1" id="Contact">
             <label class="Big-Title">DESING PROJECTS</label>
             
         </div>
